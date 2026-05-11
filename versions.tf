@@ -2,7 +2,7 @@ terraform {
   required_version = "= 1.9.8"
 
   cloud {
-    organization = "harjotscloud-org"
+    organization = "NCPL-FirstOrganization"
 
     workspaces {
       tags = ["platform"]
