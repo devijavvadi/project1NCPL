@@ -9,6 +9,9 @@ module "s3" {
   environment = var.environment
   tags        = local.common_tags
 }
+
+
+
 module "vpc" {
   source = "./modules/vpc"
 
@@ -18,6 +21,9 @@ module "vpc" {
 
   tags = local.common_tags
 }
+
+
+
 module "ec2" {
   source = "./modules/ec2"
 
@@ -30,6 +36,8 @@ module "ec2" {
 
   tags = local.common_tags
 }
+
+
 module "iam" {
   source = "./modules/iam"
 
